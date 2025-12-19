@@ -175,7 +175,6 @@ python-socks==2.7.1
 pyttsx3==2.98
 pytz==2023.3.post1
 pyvis==0.3.2
-pywin32==306
 PyYAML==6.0.2
 pyzmq==25.1.2
 qrcode==7.4.2
