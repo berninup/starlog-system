@@ -104,7 +104,6 @@ limits==3.7.0
 llama_cpp_python==0.2.69
 loguru==0.7.2
 lxml==5.4.0
-maigret @ file:///C:/Users/chris/Code/osint/maigret2/maigret
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
 marshmallow==3.20.1
