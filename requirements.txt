@@ -5,7 +5,6 @@ aiohttp==3.12.14
 aiohttp_socks==0.10.1
 aiosignal==1.4.0
 alive-progress==3.2.0
-alpaca-trade-api==3.2.0
 altair==6.0.0
 antlr4-python3-runtime==4.9.3
 anyio==4.3.0
