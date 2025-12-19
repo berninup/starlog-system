@@ -17,7 +17,12 @@ def format_asteroid_data(asteroid):
     hazardous_stat = "Hostile Detected" if hazardous else "Safe"
     diameter_meters = float(asteroid['estimated_diameter']['meters']['estimated_diameter_max'])
     velocity_kph = float(asteroid['close_approach_data'][0]['relative_velocity']['kilometers_per_hour'])
-    return f"Asteroid {name}: Danger: {hazardous_stat} Size: {diameter_meters:.2f} meters Speed: {velocity_kph:.2f} kph"
+    return {
+        'name': name,
+        'hazardous_stat': hazardous_stat,
+        'diameter_meters': diameter_meters,
+        'velocity_kph': velocity_kph
+    }
     
 
 if __name__ == "__main__":

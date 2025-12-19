@@ -7,9 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 api_key = os.getenv("NASA_API_KEY")
 
-st.title("🚀 Star-Log: Asteroid Radar")
+st.title("🚀 Star-Log: Asteroid Radar 🚀")
 
-search_date = st.date_input("Select Scan Dtate", datetime.date.today())
+search_date = st.date_input("Select Scan Date", datetime.date.today())
 
 if st.button("Scan Sector"):
     asteroids = fetch_asteroid_data(api_key, search_date, search_date)
@@ -20,5 +20,16 @@ if st.button("Scan Sector"):
     st.write(f"Found {len(daily_data)} asteroids.")
     
     for asteroid in daily_data:
+        col1, col2, col3 = st.columns(3)
         stat_block = format_asteroid_data(asteroid)
-        st.write(stat_block)
+        if stat_block['hazardous_stat'] == True:
+            delta = 'Dangerous'
+            d_color = "inverse"
+        else:
+            delta = 'Safe'
+            d_color = "normal"         
+        col1.metric('Name',stat_block['name'], delta = delta, delta_arrow = "off", delta_color = d_color)
+        col2.metric('Velocity',f'{float(stat_block["velocity_kph"]):.2f}')
+        col3.metric('Size in Meters',f'{float(stat_block["diameter_meters"]):.2f}')
+        
+        st.divider()
