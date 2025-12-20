@@ -1,6 +1,6 @@
 # 🚀 Star-Log: Asteroid Radar
 
-![Build Status](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/actions/workflows/ci.yml/badge.svg)
+![Build Status](https://github.com/berninup/starlog-system/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-red)
 
