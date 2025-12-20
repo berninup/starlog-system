@@ -5,6 +5,11 @@ from datetime import date
 
 load_dotenv()
 
+def fetch_potd(api_key):
+    response = requests.get(f'https://api.nasa.gov/planetary/apod?api_key={api_key}')
+    return response.json()
+    
+
 def fetch_asteroid_data(api_key, start_date, end_date):
     response = requests.get(
         f'https://api.nasa.gov/neo/rest/v1/feed?start_date={start_date}&end_date={end_date}&api_key={api_key}'

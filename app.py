@@ -1,14 +1,16 @@
 import streamlit as st
 import datetime
-from main import fetch_asteroid_data, format_asteroid_data
+from main import fetch_asteroid_data, format_asteroid_data, fetch_potd
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
 api_key = os.getenv("NASA_API_KEY")
+photo = fetch_potd(api_key)
 
 st.title("🚀 Star-Log: Asteroid Radar 🚀")
 
+st.image(photo['hdurl'], width=700) 
 search_date = st.date_input("Select Scan Date", datetime.date.today())
 
 if st.button("Scan Sector"):
