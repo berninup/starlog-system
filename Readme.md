@@ -8,7 +8,7 @@
 
 Designed with a focus on **clean architecture** and **DevOps automation**, this project demonstrates a full-stack data workflow: fetching raw telemetry, processing it via an ETL pipeline, and rendering it in a responsive tactical interface.
 
-![Dashboard Preview](assets/dashboard-preview.png)
+![Dashboard Preview](assets/dashboard_preview.png)
 
 ## 🌟 Key Features
 
@@ -32,8 +32,8 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-    cd YOUR_REPO_NAME
+    git clone [https://github.com/berninup/starlog-=system.git](https://github.com/berninup/starlog-system.git)
+    cd starlog-system
     ```
 
 2.  **Create a Virtual Environment:**
@@ -78,4 +78,4 @@ The project follows a modular "Separation of Concerns" design:
 * **CI/CD Implementation:** Setting up GitHub Actions to catch syntax errors automatically prevents broken builds in production.
 
 ---
-*Created by [Your Name]*
+*Created by Chris Basham*
